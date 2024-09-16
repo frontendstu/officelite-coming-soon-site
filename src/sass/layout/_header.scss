@@ -3,3 +3,25 @@
 /* ------------------------------- */
 /* Header                          */
 /* ------------------------------- */
+
+.header {
+    @include mixin.flex;
+
+    margin-top: var(--header-margin-top);
+
+    /* Header Branding */
+    &__branding {
+        transition: var(--header-branding-transition);
+        opacity: var(--header-branding-opacity);
+
+        @include mixin.hover-focus-within {
+            opacity: var(--header-branding-opacity-active);
+        }
+    }
+}
+
+@media (min-width: 48em) {
+    .header {
+        align-items: flex-start;
+    }
+}
