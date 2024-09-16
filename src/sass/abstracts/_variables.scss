@@ -35,11 +35,12 @@
     --copy-leading: inherit;
 
     // ----- Links
-    --link-transition: inherit;
+    --link-transition: color 200ms ease-in-out, background 200ms ease-in-out,
+        opacity 200ms ease-in-out;
     --link-clr: inherit;
     --link-clr-active: inherit;
     --link-decoration: none;
-    --link-decoration-active: underline;
+    --link-decoration-active: none;
     --link-outline: 2px solid hsl(213 94% 68%);
     --link-outline-offset: 3px;
     --link-outline-radius: 2px;
