@@ -1,1 +1,13 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Fonts                           */
+/* ------------------------------- */
+
+/* Kumbh Sans */
+@include mixin.font-face(
+    $font-family: 'Kumbh Sans',
+    $font-path:
+        '../assets/fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf',
+    $font-weight: 400 700
+);
