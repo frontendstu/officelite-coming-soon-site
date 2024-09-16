@@ -32,6 +32,13 @@
     // ----- Body
     --body-bg-clr: hsl(var(--clr-neutral-150));
 
+    // --- Body Pattern
+    --body-bg-img-url: url('../assets/images/home/bg-pattern-header.svg');
+    --body-bg-img-pos: center -10.375rem;
+    --body-bg-img-size: 28.625rem;
+    --body-bg-img: var(--body-bg-img-url) no-repeat var(--body-bg-img-pos) /
+        var(--body-bg-img-size);
+
     // ----- Copy
     --copy-clr: hsl(var(--clr-neutral-500));
     --copy-ff: var(--ff-kumbh-sans);
@@ -104,6 +111,9 @@
         --fs-100: var(--fs-200);
         --fs-400: var(--fs-600);
 
+        --body-bg-img-size: 41.625rem;
+        --body-bg-img-pos: 25.75rem -10rem;
+
         --container-max-width: 43rem;
 
         --header-margin-top: 4.5rem;
@@ -112,6 +122,9 @@
     // ----- 1440px
     @media (min-width: 90em) {
         --fs-500: var(--fs-600);
+
+        --body-bg-img-size: 70.875rem;
+        --body-bg-img-pos: 43rem -28rem;
 
         --container-max-width: 69.375rem;
         --container-padding-inline: 0.5rem;
