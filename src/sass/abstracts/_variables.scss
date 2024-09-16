@@ -30,8 +30,8 @@
     // ---------- BOILERPLATE
 
     // ----- Copy
-    --copy-clr: inherit;
-    --copy-font: inherit;
+    --copy-clr: hsl(var(--clr-neutral-500));
+    --copy-font: var(--fw-regular) var(--fs-200) var(--ff-kumbh-sans);
     --copy-leading: inherit;
 
     // ----- Links
