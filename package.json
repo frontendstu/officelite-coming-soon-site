@@ -1,7 +1,7 @@
 {
-    "name": "project-name",
-    "version": "0.1.0",
-    "description": "Project description",
+    "name": "officelite-coming-soon-site",
+    "version": "1.0.0",
+    "description": "My solution to the Frontend Mentor 'Officelite Coming Soon' challenge",
     "main": "public/index.html",
     "author": "Frontend Stu",
     "license": "",
