@@ -71,6 +71,11 @@
     --btn-fw: var(--fw-bold);
     --btn-case: capitalize;
 
+    // --- Button Styles
+    --btn-pri-bg: hsl(var(--clr-pri));
+    --btn-pri-bg-active: hsl(var(--clr-pri-light));
+    --btn-pri-clr: hsl(var(--clr-neutral-100));
+
     // ---------- LAYOUT
 
     // ---------- MEDIA QUERIES
