@@ -39,4 +39,14 @@
             background-color: var(--btn-pri-light-bg-active);
         }
     }
+
+    /* Button Styles: On Dark */
+    &[data-btn-style='on-dark'] {
+        background-color: var(--btn-on-dark-bg);
+        color: var(--btn-on-dark-clr);
+
+        @include mixin.hover-focus-within {
+            color: var(--btn-on-dark-clr-active);
+        }
+    }
 }
