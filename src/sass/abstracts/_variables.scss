@@ -31,7 +31,8 @@
 
     // ----- Copy
     --copy-clr: hsl(var(--clr-neutral-500));
-    --copy-font: var(--fw-regular) var(--fs-200) var(--ff-kumbh-sans);
+    --copy-ff: var(--ff-kumbh-sans);
+    --copy-font: var(--fw-regular) var(--fs-200) var(--copy-ff);
     --copy-leading: inherit;
 
     // ----- Links
