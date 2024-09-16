@@ -11,9 +11,6 @@
 
     // ----- Copy
     --copy-clr: inherit;
-    --copy-fs: inherit;
-    --copy-fw: inherit;
-    --copy-ff: inherit;
     --copy-font: inherit;
     --copy-leading: inherit;
 
@@ -49,17 +46,11 @@
 
     // ---------- LAYOUT
 
-    // ----- Header
-    --header-padding-block: 1.5rem;
-    --header-menu-pos-top: 4rem;
-
     // ---------- MEDIA QUERIES
 
     // ----- 768px
     @media (min-width: 48em) {
         --container-max-width: 43rem;
-
-        --header-padding-block: 2rem;
     }
 
     // ----- 1440px
