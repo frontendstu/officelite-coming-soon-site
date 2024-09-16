@@ -76,6 +76,10 @@
     --btn-pri-bg-active: hsl(var(--clr-pri-light));
     --btn-pri-clr: hsl(var(--clr-neutral-100));
 
+    --btn-pri-light-bg: hsl(var(--clr-pri) / 0.15);
+    --btn-pri-light-bg-active: hsl(var(--clr-pri) / 0.25);
+    --btn-pri-light-clr: hsl(var(--clr-pri));
+
     // ---------- LAYOUT
 
     // ---------- MEDIA QUERIES
