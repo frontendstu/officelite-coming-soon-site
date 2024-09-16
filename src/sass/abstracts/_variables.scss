@@ -29,6 +29,9 @@
 
     // ---------- BOILERPLATE
 
+    // ----- Body
+    --body-bg-clr: hsl(var(--clr-neutral-150));
+
     // ----- Copy
     --copy-clr: hsl(var(--clr-neutral-500));
     --copy-ff: var(--ff-kumbh-sans);
