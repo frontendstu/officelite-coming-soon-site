@@ -1,0 +1,70 @@
+:root {
+    // ---------- COLOURS
+    // Add project colours here
+
+    // ---------- FONTS
+    --ff-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif;
+    --ff-serif: Georgia, 'Times New Roman', Times, serif;
+
+    // ---------- BOILERPLATE
+
+    // ----- Copy
+    --copy-clr: inherit;
+    --copy-fs: inherit;
+    --copy-fw: inherit;
+    --copy-ff: inherit;
+    --copy-font: inherit;
+    --copy-leading: inherit;
+
+    // ----- Links
+    --link-transition: inherit;
+    --link-clr: inherit;
+    --link-clr-active: inherit;
+    --link-decoration: none;
+    --link-decoration-active: underline;
+    --link-outline: 2px solid hsl(213 94% 68%);
+    --link-outline-offset: 3px;
+    --link-outline-radius: 2px;
+
+    // ----- Heading
+    --heading-fw: inherit;
+    --heading-ff: inherit;
+
+    // ----- Horizontal Rule
+    --hr-border-top: 1px solid hsl(0 0% 59%);
+
+    // ---------- UTILITIES
+
+    // ----- Container
+    --container-max-width: 21.375rem;
+    --container-padding-inline: 0.25rem;
+
+    // ---------- COMPONENTS
+
+    // ----- Buttons
+    --btn-padding: 0.5rem 1rem;
+    --btn-radius: 5px;
+    --btn-border: 1px solid black;
+
+    // ---------- LAYOUT
+
+    // ----- Header
+    --header-padding-block: 1.5rem;
+    --header-menu-pos-top: 4rem;
+
+    // ---------- MEDIA QUERIES
+
+    // ----- 768px
+    @media (min-width: 48em) {
+        --container-max-width: 43rem;
+
+        --header-padding-block: 2rem;
+    }
+
+    // ----- 1440px
+    @media (min-width: 90em) {
+        --container-max-width: 69.375rem;
+        --container-padding-inline: 0.5rem;
+    }
+}

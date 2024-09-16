@@ -1,0 +1,128 @@
+// Event Mixins
+// Usage: @include mixin.link { ... }
+@mixin link {
+    &:link {
+        @content;
+    }
+}
+
+@mixin visited {
+    &:visited {
+        @content;
+    }
+}
+
+@mixin active {
+    &:active {
+        @content;
+    }
+}
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin hover-focus {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover-focus-within {
+    &:hover,
+    &:focus-within {
+        @content;
+    }
+}
+
+@mixin focus {
+    &:focus {
+        @content;
+    }
+}
+
+@mixin focus-within {
+    &:focus-within {
+        @content;
+    }
+}
+
+@mixin focus-visible {
+    &:focus-visible {
+        @content;
+    }
+}
+
+// Flexbox
+// Useage: @include mixin.flex;
+@mixin flex($align: center, $justify: center, $direction: column, $gap: null) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+// Grid
+// Usage: @include mixin.grid(3, 1.875rem) { ... }
+@mixin grid($columns, $gap: null) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
+}
+
+// Font Face Import
+// Usage:
+// @include mixin.font-face(
+//   $font-family: 'Font Name',
+//   $font-path: 'url-to-font',
+//   $font-weight: font-weight-range
+// );
+@mixin font-face($font-family, $font-path, $font-weight, $font-style: normal) {
+    @font-face {
+        font-family: #{$font-family};
+        font-display: swap;
+        font-weight: #{$font-weight};
+        src: url(#{$font-path});
+    }
+}
+
+// Size
+// Usage:
+// @include mixin.size($width: ..., $height: ...);
+@mixin size($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+}
+
+// Centre Body
+// Usage: @include mixin.body-centre
+@mixin body-centre {
+    display: grid;
+    place-content: center;
+}
+
+// Background Image
+@mixin bg-img($bg-url, $bg-repeat: no-repeat, $bg-size: null, $bg-pos: null) {
+    background-image: $bg-url;
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-position: $bg-pos;
+}
+
+// Position Absolute
+@mixin pos-absolute(
+    $pos-top: null,
+    $pos-right: null,
+    $pos-bottom: null,
+    $pos-left: null
+) {
+    position: absolute;
+    top: $pos-top;
+    right: $pos-right;
+    bottom: $pos-bottom;
+    left: $pos-left;
+}

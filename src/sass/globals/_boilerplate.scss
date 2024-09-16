@@ -1,0 +1,50 @@
+@use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Body                            */
+/* ------------------------------- */
+
+body {
+    color: var(--copy-clr);
+    font: var(--copy-font);
+    line-height: var(--copy-leading);
+}
+
+/* ------------------------------- */
+/* Links                           */
+/* ------------------------------- */
+
+a {
+    transition: var(--link-transition);
+    color: var(--link-clr);
+    text-decoration: var(--link-decoration);
+
+    @include mixin.hover-focus {
+        color: var(--link-clr-active);
+        text-decoration: var(--link-decoration-active);
+    }
+
+    @include mixin.focus {
+        outline: var(--link-outline);
+        outline-offset: var(--link-outline-offset);
+        border-radius: var(--link-outline-radius);
+    }
+}
+
+/* ------------------------------- */
+/* Horizontal Rule                 */
+/* ------------------------------- */
+
+hr {
+    border: 0;
+    border-top: var(--hr-border-top);
+}
+
+/* ------------------------------- */
+/* Heading                         */
+/* ------------------------------- */
+
+.heading {
+    font-weight: var(--heading-fw);
+    font-family: var(--heading-ff);
+}
