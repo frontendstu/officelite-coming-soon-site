@@ -29,4 +29,14 @@
             background-color: var(--btn-pri-bg-active);
         }
     }
+
+    /* Button Style: Primary Light */
+    &[data-btn-style='primary-light'] {
+        background-color: var(--btn-pri-light-bg);
+        color: var(--btn-pri-light-clr);
+
+        @include mixin.hover-focus-within {
+            background-color: var(--btn-pri-light-bg-active);
+        }
+    }
 }
