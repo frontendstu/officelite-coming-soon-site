@@ -19,4 +19,14 @@
     @include mixin.focus {
         border-radius: var(--btn-radius);
     }
+
+    /* Button Style: Primary */
+    &[data-btn-style='primary'] {
+        background-color: var(--btn-pri-bg);
+        color: var(--btn-pri-clr);
+
+        @include mixin.hover-focus-within {
+            background-color: var(--btn-pri-bg-active);
+        }
+    }
 }
