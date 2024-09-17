@@ -3,3 +3,51 @@
 /* ------------------------------- */
 /* Hero                            */
 /* ------------------------------- */
+
+.hero {
+    margin-top: var(--hero-margin-top);
+
+    &__img {
+        max-width: var(--hero-img-max-width);
+    }
+
+    &__content {
+        @include mixin.flex($gap: var(--hero-content-gap));
+
+        max-width: var(--hero-content-max-width);
+        font-size: var(--hero-content-fs);
+        line-height: var(--hero-content-leading);
+
+        .heading {
+            color: var(--hero-content-heading-clr);
+            font-size: var(--hero-content-heading-fs);
+            line-height: var(--hero-content-heading-leading);
+        }
+
+        .btn {
+            box-shadow: var(--hero-content-btn-box-shadow);
+        }
+    }
+
+    &__home {
+        @include mixin.flex($gap: var(--hero-home-gap));
+
+        text-align: var(--hero-home-text-align);
+    }
+}
+
+/* ------------------------------- */
+/* Hero @ 768px                    */
+/* ------------------------------- */
+
+@media (min-width: 48em) {
+    .hero {
+        &__content {
+            align-items: flex-start;
+        }
+
+        &__home {
+            flex-direction: row-reverse;
+        }
+    }
+}
