@@ -21,6 +21,12 @@
         margin-inline: var(--card-btn-margin-inline);
     }
 
+    &__content {
+        h2 {
+            margin-block: var(--card-content-margin-block);
+        }
+    }
+
     &__list {
         @include mixin.flex($direction: column, $gap: var(--card-list-gap));
 
