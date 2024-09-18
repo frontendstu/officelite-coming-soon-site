@@ -27,6 +27,19 @@
         margin-block: var(--card-list-margin-block);
         list-style: none;
     }
+
+    /* Card Styles                     */
+    /* ------------------------------- */
+
+    /* Card Style: Light */
+    &[data-card-style='light'] {
+        background-color: var(--card-light-bg-clr);
+        color: var(--card-light-clr);
+
+        li {
+            color: var(--card-light-list-clr);
+        }
+    }
 }
 
 @media (min-width: 48em) {
