@@ -113,7 +113,7 @@
     --hero-home-text-align: center;
 
     // ----- Cards
-    --card-padding-block: 2.5rem;
+    --card-padding: 2.5rem;
     --card-radius: 13px;
     --card-text-align: center;
 
@@ -183,8 +183,8 @@
         --pricing-gap: 1.5rem 0;
         --pricing-margin-top: 8.75rem;
 
+        --card-content-padding: 3rem;
         --card-content-margin-block: 1rem 0;
-        --card-padding-block: 3rem;
         --card-text-align: left;
 
         --card-dark-bg-img-pos: center right 7rem;
