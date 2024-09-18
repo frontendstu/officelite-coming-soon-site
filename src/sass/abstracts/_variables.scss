@@ -117,6 +117,8 @@
     --card-radius: 13px;
     --card-text-align: center;
 
+    --card-content-margin-block: 2.5rem 1rem;
+
     --card-heading-clr: hsl(var(--clr-neutral-800));
     --card-heading-fs: var(--fs-600);
 
@@ -181,6 +183,7 @@
         --pricing-gap: 1.5rem 0;
         --pricing-margin-top: 8.75rem;
 
+        --card-content-margin-block: 1rem 0;
         --card-padding-block: 3rem;
         --card-text-align: left;
 
@@ -204,6 +207,7 @@
         --hero-content-max-width: 33.75rem;
         --hero-content-fs: var(--fs-250);
 
+        --card-content-margin-block: 2.5rem 1rem;
         --card-padding-block: 2.5rem;
         --card-text-align: center;
         --card-list-margin-block: 3.5rem 2rem;
