@@ -3,3 +3,57 @@
 /* ------------------------------- */
 /* Cards                           */
 /* ------------------------------- */
+
+.card {
+    padding-block: var(--card-padding-block);
+    border-radius: var(--card-radius);
+    text-align: var(--card-text-align);
+
+    .heading {
+        color: var(--card-heading-clr);
+    }
+
+    h2 {
+        font-size: var(--card-heading-fs);
+    }
+
+    .btn {
+        margin-inline: var(--card-btn-margin-inline);
+    }
+
+    &__list {
+        @include mixin.flex($direction: column, $gap: var(--card-list-gap));
+
+        margin-block: var(--card-list-margin-block);
+        list-style: none;
+    }
+}
+
+@media (min-width: 48em) {
+    .card {
+        display: grid;
+        grid-template-areas:
+            'text list'
+            'button list';
+
+        .btn {
+            grid-area: button;
+            margin-inline: unset;
+        }
+
+        &__list {
+            align-items: flex-start;
+            grid-area: list;
+        }
+    }
+}
+
+@media (min-width: 90em) {
+    .card {
+        @include mixin.flex;
+
+        &__list {
+            align-items: center;
+        }
+    }
+}
