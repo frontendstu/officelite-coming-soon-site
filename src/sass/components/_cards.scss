@@ -40,6 +40,21 @@
             color: var(--card-light-list-clr);
         }
     }
+
+    /* Card Style: Dark */
+    &[data-card-style='dark'] {
+        background: var(--card-dark-bg-img);
+        background-color: var(--card-dark-bg-clr);
+        color: var(--card-dark-clr);
+
+        .heading {
+            color: inherit;
+        }
+
+        li {
+            color: var(--card-dark-list-clr);
+        }
+    }
 }
 
 @media (min-width: 48em) {
