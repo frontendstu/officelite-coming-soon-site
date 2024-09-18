@@ -3,3 +3,16 @@
 /* ------------------------------- */
 /* Home                            */
 /* ------------------------------- */
+
+/* Pricing */
+.pricing {
+    @include mixin.grid($columns: 1, $gap: var(--pricing-gap));
+
+    margin-top: var(--pricing-margin-top);
+}
+
+@media (min-width: 90em) {
+    .pricing {
+        @include mixin.grid($columns: 3);
+    }
+}
