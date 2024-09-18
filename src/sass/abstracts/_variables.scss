@@ -130,6 +130,16 @@
     --card-light-clr: hsl(var(--clr-neutral-800));
     --card-light-list-clr: hsl(var(--clr-neutral-500));
 
+    --card-dark-bg-img-url: url('../assets/images/home/bg-pattern-pricing.svg');
+    --card-dark-bg-img-pos: center bottom 0.75rem;
+
+    --card-dark-bg-img: var(--card-dark-bg-img-url) var(--card-dark-bg-img-pos)
+        no-repeat;
+
+    --card-dark-bg-clr: hsl(var(--clr-pri));
+    --card-dark-clr: hsl(var(--clr-neutral-100));
+    --card-dark-list-clr: hsl(var(--clr-neutral-100) / 0.75);
+
     // ---------- LAYOUT
 
     // ----- Header
@@ -173,6 +183,8 @@
 
         --card-padding-block: 3rem;
         --card-text-align: left;
+
+        --card-dark-bg-img-pos: center right 7rem;
     }
 
     // ----- 1440px
@@ -195,6 +207,7 @@
         --card-padding-block: 2.5rem;
         --card-text-align: center;
         --card-list-margin-block: 3.5rem 2rem;
+        --card-dark-bg-img-pos: center bottom;
 
         --pricing-gap: 0 1.875rem;
         --pricing-margin-top: 4.375rem;
