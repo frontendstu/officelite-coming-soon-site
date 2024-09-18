@@ -122,7 +122,7 @@
     --card-heading-clr: hsl(var(--clr-neutral-800));
     --card-heading-fs: var(--fs-600);
 
-    --card-btn-margin-inline: auto;
+    --card-btn-margin: auto;
 
     --card-list-gap: 1rem 0;
     --card-list-margin-block: 3.5rem 2rem;
@@ -186,6 +186,7 @@
         --card-content-padding: 3rem;
         --card-content-margin-block: 1rem 0;
         --card-text-align: left;
+        --card-btn-margin: 1.5rem auto;
 
         --card-dark-bg-img-pos: center right 7rem;
     }
@@ -207,10 +208,11 @@
         --hero-content-max-width: 33.75rem;
         --hero-content-fs: var(--fs-250);
 
-        --card-content-margin-block: 2.5rem 1rem;
+        --card-btn-margin: 0 auto;
         --card-padding-block: 2.5rem;
         --card-text-align: center;
         --card-list-margin-block: 3.5rem 2rem;
+        --card-content-margin-block: 2.5rem 1rem;
         --card-dark-bg-img-pos: center bottom 0.5rem;
 
         --pricing-gap: 0 1.875rem;
