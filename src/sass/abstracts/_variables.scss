@@ -125,6 +125,11 @@
     --card-list-gap: 1rem 0;
     --card-list-margin-block: 3.5rem 2rem;
 
+    // --- Card Styles
+    --card-light-bg-clr: hsl(var(--clr-neutral-100));
+    --card-light-clr: hsl(var(--clr-neutral-800));
+    --card-light-list-clr: hsl(var(--clr-neutral-500));
+
     // ---------- LAYOUT
 
     // ----- Header
