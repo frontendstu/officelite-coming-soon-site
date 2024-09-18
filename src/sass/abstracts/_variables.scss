@@ -122,6 +122,14 @@
     --header-branding-opacity: 1;
     --header-branding-opacity-active: 0.5;
 
+    // ---------- PAGES
+
+    // ----- Home
+
+    // --- Pricing
+    --pricing-gap: 2rem 0;
+    --pricing-margin-top: 6rem;
+
     // ---------- MEDIA QUERIES
 
     // ----- 768px
@@ -141,6 +149,9 @@
         --hero-content-max-width: 21.5625rem;
         --hero-home-gap: 0 3.9375rem;
         --hero-home-text-align: left;
+
+        --pricing-gap: 1.5rem 0;
+        --pricing-margin-top: 8.75rem;
     }
 
     // ----- 1440px
@@ -159,5 +170,8 @@
         --hero-img-max-width: 29.6875rem;
         --hero-content-max-width: 33.75rem;
         --hero-content-fs: var(--fs-250);
+
+        --pricing-gap: 0 1.875rem;
+        --pricing-margin-top: 11.5rem;
     }
 }
