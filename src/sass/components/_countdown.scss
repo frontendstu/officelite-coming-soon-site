@@ -42,4 +42,17 @@
             font-size: var(--countdown-item-label-fs);
         }
     }
+
+    /* Countdown Style:  Dark */
+    &[data-countdown-style='on-dark'] {
+        color: var(--countdown-style-ondark-clr);
+
+        .countdown__item {
+            background-color: var(--countdown-style-ondark-bg);
+
+            &-label {
+                color: var(--countdown-style-ondark-label-clr);
+            }
+        }
+    }
 }
