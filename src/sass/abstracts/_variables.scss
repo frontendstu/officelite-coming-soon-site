@@ -165,6 +165,11 @@
     --countdown-style-ondark-bg: hsl(var(--clr-neutral-800));
     --countdown-style-ondark-label-clr: hsl(var(--clr-neutral-100) / 0.5);
 
+    --countdown-style-onlight-clr: hsl(var(--clr-pri));
+    --countdown-style-onlight-heading-clr: hsl(var(--clr-neutral-800));
+    --countdown-style-onlight-bg: hsl(var(--clr-pri) / 0.1);
+    --countdown-style-onlight-label-clr: hsl(var(--clr-neutral-900) / 0.5);
+
     // ---------- LAYOUT
 
     // ----- Header
