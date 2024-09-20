@@ -26,7 +26,7 @@
     text-align: center;
 
     a {
-        @include mixin.hover-focus {
+        @include mixin.hover {
             color: var(--attribution-link-clr-active);
         }
     }
