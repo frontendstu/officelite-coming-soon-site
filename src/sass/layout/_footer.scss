@@ -13,4 +13,8 @@
     background: var(--footer-bg);
     color: var(--footer-clr);
     text-align: var(--footer-text-align);
+
+    .container {
+        @include mixin.flex;
+    }
 }
