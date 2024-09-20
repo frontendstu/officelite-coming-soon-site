@@ -142,6 +142,25 @@
     --card-dark-clr: hsl(var(--clr-neutral-100));
     --card-dark-list-clr: hsl(var(--clr-neutral-100) / 0.75);
 
+    // ----- Countdown
+    --countdown-fw: var(--fw-bold);
+
+    --countdown-heading-fs: var(--fs-200);
+    --countdown-heading-tracking: 5px;
+    --countdown-heading-case: uppercase;
+    --countdown-heading-span-clr: hsl(var(--clr-pri));
+
+    --countdown-wrapper-gap: 0.8125rem;
+    --countdown-wrapper-margin-block: 2.875rem 2.5rem;
+
+    --countdown-item-width: 4.5rem;
+    --countdown-item-height: 5.75rem;
+    --countdown-item-radius: 4px;
+    --countdown-item-bg: transparent;
+    --countdown-item-fs: var(--fs-500);
+    --countdown-item-leading: 1.25;
+    --countdown-item-label-fs: var(--fs-100);
+
     // ---------- LAYOUT
 
     // ----- Header
