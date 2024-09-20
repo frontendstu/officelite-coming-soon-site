@@ -19,6 +19,19 @@
     }
 }
 
+.attribution {
+    margin-top: var(--attribution-margin-top);
+    color: var(--attribution-clr);
+    font-size: var(--attribution-fs);
+    text-align: center;
+
+    a {
+        @include mixin.hover-focus {
+            color: var(--attribution-link-clr-active);
+        }
+    }
+}
+
 /* ------------------------------- */
 /* Media Queries                   */
 /* ------------------------------- */
