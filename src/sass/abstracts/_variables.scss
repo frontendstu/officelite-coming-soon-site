@@ -191,6 +191,12 @@
     --footer-clr: hsl(var(--clr-neutral-100));
     --footer-text-align: center;
 
+    // --- Attribution
+    --attribution-margin-top: 5rem;
+    --attribution-clr: hsl(var(--clr-neutral-500) / 0.5);
+    --attribution-fs: 0.9375rem; // 15px
+    --attribution-link-clr-active: hsl(var(--clr-neutral-500) / 0.3);
+
     // ---------- PAGES
 
     // ----- Home
