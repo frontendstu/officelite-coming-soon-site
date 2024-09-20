@@ -182,7 +182,7 @@
 
     // ----- Footer
     --footer-transform: translateY(-46rem);
-    --footer-padding-block: 55.875rem 1.75rem;
+    --footer-padding-block: 55.875rem 6.25rem;
     --footer-bg-pos: center 9rem / cover;
     --footer-bg-img-url: url('../assets/images/home/bg-pattern-footer.svg');
     --footer-bg-clr: hsl(var(--clr-neutral-900));
@@ -235,7 +235,7 @@
         --countdown-item-height: 8rem;
 
         --footer-transform: translateY(-29rem);
-        --footer-padding-block: 37.375rem 1.25rem;
+        --footer-padding-block: 37.375rem 6.25rem;
         --footer-bg-pos: center 2rem / 90.875rem;
     }
 
@@ -267,7 +267,7 @@
         --pricing-margin-top: 4.375rem;
 
         --footer-bg-pos: -44rem -40rem / 127.5rem;
-        --footer-padding-block: 20rem 2rem;
+        --footer-padding-block: 20rem 5.625rem;
         --footer-transform: translateY(-15rem);
         --footer-text-align: left;
     }
