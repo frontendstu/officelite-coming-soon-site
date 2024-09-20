@@ -3,3 +3,43 @@
 /* ------------------------------- */
 /* Countdown Timer                 */
 /* ------------------------------- */
+
+.countdown {
+    font-weight: var(--countdown-fw);
+
+    .heading {
+        font-size: var(--countdown-heading-fs);
+        letter-spacing: var(--countdown-heading-tracking);
+        text-transform: var(--countdown-heading-case);
+
+        span {
+            color: var(--countdown-heading-span-clr);
+        }
+    }
+
+    &__wrapper {
+        @include mixin.flex(
+            $gap: var(--countdown-wrapper-gap),
+            $direction: row
+        );
+
+        margin-block: var(--countdown-wrapper-margin-block);
+    }
+
+    &__item {
+        @include mixin.flex;
+        @include mixin.size(
+            var(--countdown-item-width),
+            var(--countdown-item-height)
+        );
+
+        border-radius: var(--countdown-item-radius);
+        background-color: var(--countdown-item-bg);
+        font-size: var(--countdown-item-fs);
+        line-height: var(--countdown-item-leading);
+
+        &-label {
+            font-size: var(--countdown-item-label-fs);
+        }
+    }
+}
