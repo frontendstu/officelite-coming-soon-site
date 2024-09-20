@@ -152,6 +152,17 @@
     --header-branding-opacity: 1;
     --header-branding-opacity-active: 0.5;
 
+    // ----- Footer
+    --footer-transform: translateY(-46rem);
+    --footer-padding-block: 55.875rem 1.75rem;
+    --footer-bg-pos: center 9rem / cover;
+    --footer-bg-img-url: url('../assets/images/home/bg-pattern-footer.svg');
+    --footer-bg-clr: hsl(var(--clr-neutral-900));
+    --footer-bg: var(--footer-bg-clr) var(--footer-bg-img-url) no-repeat
+        var(--footer-bg-pos);
+    --footer-clr: hsl(var(--clr-neutral-100));
+    --footer-text-align: center;
+
     // ---------- PAGES
 
     // ----- Home
@@ -189,6 +200,10 @@
         --card-btn-margin: 1.5rem auto;
 
         --card-dark-bg-img-pos: center right 7rem;
+
+        --footer-transform: translateY(-29rem);
+        --footer-padding-block: 37.375rem 1.25rem;
+        --footer-bg-pos: center 2rem / 90.875rem;
     }
 
     // ----- 1440px
@@ -217,5 +232,10 @@
 
         --pricing-gap: 0 1.875rem;
         --pricing-margin-top: 4.375rem;
+
+        --footer-bg-pos: -44rem -40rem / 127.5rem;
+        --footer-padding-block: 20rem 2rem;
+        --footer-transform: translateY(-15rem);
+        --footer-text-align: left;
     }
 }
