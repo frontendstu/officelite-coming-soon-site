@@ -55,4 +55,20 @@
             }
         }
     }
+
+    &[data-countdown-style='on-light'] {
+        color: var(--countdown-style-onlight-clr);
+
+        .heading {
+            color: var(--countdown-style-onlight-heading-clr);
+        }
+
+        .countdown__item {
+            background-color: var(--countdown-style-onlight-bg);
+
+            &-label {
+                color: var(--countdown-style-onlight-label-clr);
+            }
+        }
+    }
 }
