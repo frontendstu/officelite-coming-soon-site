@@ -1,1 +1,16 @@
 @use '../abstracts' as abstract;
+
+/* ------------------------------- */
+/* Footer                          */
+/* ------------------------------- */
+
+.footer {
+    position: absolute;
+    transform: var(--footer-transform);
+    width: 100%;
+    padding-block: var(--footer-padding-block);
+    z-index: -999;
+    background: var(--footer-bg);
+    color: var(--footer-clr);
+    text-align: var(--footer-text-align);
+}
