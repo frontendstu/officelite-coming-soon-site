@@ -100,14 +100,17 @@
 
     --hero-img-max-width: 10.6875rem;
 
-    --hero-content-gap: 1.5rem 0;
-    --hero-content-max-width: 20.4375rem;
     --hero-content-fs: var(--fs-200);
     --hero-content-leading: 1.75em;
     --hero-content-heading-clr: hsl(var(--clr-neutral-800));
     --hero-content-heading-fs: var(--fs-500);
     --hero-content-heading-leading: 1.1;
-    --hero-content-btn-box-shadow: 0 25px 25px -10px hsl(var(--clr-pri) / 0.25);
+
+    // --- Hero Home
+    --hero-home-content-gap: 1.5rem 0;
+    --hero-home-content-max-width: 20.4375rem;
+    --hero-home-content-btn-box-shadow: 0 25px 25px -10px hsl(var(--clr-pri) /
+                0.25);
 
     --hero-home-gap: 4.3125rem 0;
     --hero-home-text-align: center;
@@ -221,7 +224,7 @@
 
         --hero-margin-top: 6.5rem;
         --hero-img-max-width: 17.5625rem;
-        --hero-content-max-width: 21.5625rem;
+        --hero-home-content-max-width: 21.5625rem;
         --hero-home-gap: 0 3.9375rem;
         --hero-home-text-align: left;
 
@@ -258,9 +261,9 @@
         --header-margin-top: 5.0625rem;
 
         --hero-margin-top: 6.375rem;
-        --hero-img-max-width: 29.6875rem;
-        --hero-content-max-width: 33.75rem;
         --hero-content-fs: var(--fs-250);
+        --hero-img-max-width: 29.6875rem;
+        --hero-home-content-max-width: 33.75rem;
 
         --card-btn-margin: 0 auto;
         --card-padding-block: 2.5rem;
