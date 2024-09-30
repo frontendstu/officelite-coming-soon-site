@@ -152,6 +152,9 @@
     // ----- Countdown
     --countdown-fw: var(--fw-bold);
 
+    --countdown-page-margin-top: 2.5rem;
+    --countdown-page-text-align: center;
+
     --countdown-heading-fs: var(--fs-200);
     --countdown-heading-tracking: 5px;
     --countdown-heading-case: uppercase;
@@ -278,6 +281,8 @@
         --card-list-margin-block: 3.5rem 2rem;
         --card-content-margin-block: 2.5rem 1rem;
         --card-dark-bg-img-pos: center bottom 0.5rem;
+
+        --countdown-page-text-align: left;
 
         --pricing-gap: 0 1.875rem;
         --pricing-margin-top: 4.375rem;
