@@ -17,6 +17,11 @@
         }
     }
 
+    &__page {
+        margin-top: var(--countdown-page-margin-top);
+        text-align: var(--countdown-page-text-align);
+    }
+
     &__wrapper {
         @include mixin.flex(
             $gap: var(--countdown-wrapper-gap),
@@ -70,5 +75,15 @@
                 color: var(--countdown-style-onlight-label-clr);
             }
         }
+    }
+}
+
+/* ------------------------------- */
+/* Countdown @ 1440px              */
+/* ------------------------------- */
+
+@media (min-width: 90em) {
+    .countdown__wrapper {
+        justify-content: flex-start;
     }
 }
