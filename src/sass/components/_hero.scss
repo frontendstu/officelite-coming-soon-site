@@ -37,6 +37,16 @@
             }
         }
     }
+
+    &__page {
+        .hero__content {
+            @include mixin.flex($gap: var(--hero-page-content-gap));
+
+            max-width: var(--hero-page-content-max-width);
+            margin-inline: auto;
+            text-align: var(--hero-page-content-text-align);
+        }
+    }
 }
 
 /* ------------------------------- */
@@ -49,6 +59,18 @@
 
         .hero__content {
             align-items: flex-start;
+        }
+    }
+}
+
+/* ------------------------------- */
+/* Hero @ 1440px                   */
+/* ------------------------------- */
+
+@media (min-width: 90em) {
+    .hero__page {
+        .hero__content {
+            margin-inline: unset;
         }
     }
 }
