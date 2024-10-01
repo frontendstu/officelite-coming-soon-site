@@ -50,3 +50,22 @@ hr {
     font-weight: var(--heading-fw);
     font-family: var(--heading-ff);
 }
+
+/* ------------------------------- */
+/* Form Input                      */
+/* ------------------------------- */
+
+input,
+textarea,
+button {
+    @include mixin.focus {
+        outline: var(--link-outline);
+        border-radius: var(--link-outline-radius);
+    }
+}
+
+button {
+    @include mixin.focus-within {
+        outline-offset: var(--link-outline-offset);
+    }
+}
