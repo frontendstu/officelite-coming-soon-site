@@ -180,6 +180,16 @@
     --countdown-style-onlight-bg: hsl(var(--clr-pri) / 0.1);
     --countdown-style-onlight-label-clr: hsl(var(--clr-neutral-900) / 0.5);
 
+    // ----- Form
+
+    // --- Form Wrapper
+    --form-wrapper-width: 20.4375rem;
+    --form-wrapper-padding: 1.5rem;
+    --form-wrapper-margin-top: 1.5rem;
+    --form-wrapper-radius: 13px;
+    --form-wrapper-box-shadow: 0 50px 50px -25px hsl(227, 35%, 45% / 0.24);
+    --form-wrapper-bg: hsl(var(--clr-neutral-100));
+
     // ---------- LAYOUT
 
     // ----- Header
@@ -235,6 +245,9 @@
         --hero-home-gap: 0 3.9375rem;
         --hero-home-text-align: left;
         --hero-page-content-max-width: 35.75rem;
+
+        --form-wrapper-width: 27.8125rem;
+        --form-wrapper-padding: 2.5rem 2.625rem;
 
         --pricing-gap: 1.5rem 0;
         --pricing-margin-top: 8.75rem;
