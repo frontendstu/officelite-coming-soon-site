@@ -3,3 +3,16 @@
 /* ------------------------------- */
 /* Forms                           */
 /* ------------------------------- */
+
+.form {
+    /* Form Wrapper                    */
+    /* ------------------------------- */
+    &__wrapper {
+        width: var(--form-wrapper-width);
+        padding: var(--form-wrapper-padding);
+        margin-top: var(--form-wrapper-margin-top);
+        border-radius: var(--form-wrapper-radius);
+        box-shadow: var(--form-wrapper-box-shadow);
+        background-color: var(--form-wrapper-bg);
+    }
+}
