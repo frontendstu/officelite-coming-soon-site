@@ -193,6 +193,12 @@
     // --- Form Group
     --form-group-margin-top: 1.5rem;
 
+    // --- Form Control
+    --form-control-padding: 1rem;
+    --form-control-border-bottom: 1px solid hsl(var(--clr-neutral-500) / 0.5);
+    --form-control-placeholder-clr: hsl(var(--clr-neutral-500) / 0.5);
+    --form-control-alert-clr: hsl(var(--clr-error));
+
     // ---------- LAYOUT
 
     // ----- Header
