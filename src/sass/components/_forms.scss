@@ -25,4 +25,21 @@
             margin-top: 0;
         }
     }
+
+    /* Form Control                    */
+    /* ------------------------------- */
+    &__control {
+        padding: var(--form-control-padding);
+        width: 100%;
+        border: 0;
+        border-bottom: var(--form-control-border-bottom);
+
+        &::placeholder {
+            color: var(--form-control-placeholder-clr);
+        }
+
+        &-error {
+            color: var(--form-control-alert-clr);
+        }
+    }
 }
