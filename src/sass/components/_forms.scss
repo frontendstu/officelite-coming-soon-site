@@ -15,4 +15,14 @@
         box-shadow: var(--form-wrapper-box-shadow);
         background-color: var(--form-wrapper-bg);
     }
+
+    /* Form Group                      */
+    /* ------------------------------- */
+    &__group {
+        margin-top: var(--form-group-margin-top);
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
