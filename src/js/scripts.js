@@ -73,3 +73,51 @@ function formatDate(date) {
 
 // Initial call to update the countdown timer
 updateCountdown();
+
+/* ------------------------------- */
+/* Custom Select                   */
+/* ------------------------------- */
+
+// Get all specific custom select elements
+const select = document.querySelector('.custom-select__visible');
+const selectHidden = document.querySelector('.custom-select__hidden');
+const selectOptions = document.querySelectorAll('.custom-select__option');
+const selectedPlan = document.querySelector('.custom-select__visible-text');
+const selectedPrice = document.querySelector('.custom-select__visible-price');
+const selectedToggle = document.querySelector('.custom-select__toggle-icon');
+
+// Toggle plan dropdown and rotate arrow
+select.addEventListener('click', function () {
+    selectedToggle.classList.toggle('rotate'); // Rotate the arrow icon
+    selectHidden.classList.toggle('active'); // Show/hide the dropdown
+});
+
+// Loop through each option in the dropdown
+selectOptions.forEach((option) => {
+    option.addEventListener('click', function () {
+        // Remove the 'selected' class from all options
+        selectOptions.forEach((option) => option.classList.remove('selected'));
+
+        // Add the 'selected' class to the clicked option
+        this.classList.add('selected');
+
+        // Close the dropdown after selecting an option
+        selectHidden.classList.remove('active');
+        selectedToggle.classList.remove('rotate'); // Reset the arrow icon
+
+        // Update the visible selected plan and price
+        selectedPlan.textContent = this.querySelector(
+            '.custom-select__option-text'
+        ).innerText;
+        selectedPrice.textContent = this.querySelector(
+            '.custom-select__option-price'
+        ).innerText;
+
+        // Update the data-value attribute on the custom-select container
+        const selectedValue = this.getAttribute('data-value');
+        this.closest('.custom-select').setAttribute(
+            'data-value',
+            selectedValue
+        );
+    });
+});
