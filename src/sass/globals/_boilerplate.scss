@@ -65,6 +65,8 @@ button {
 }
 
 button {
+    cursor: pointer;
+
     @include mixin.focus-within {
         outline-offset: var(--link-outline-offset);
     }
