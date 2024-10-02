@@ -71,6 +71,187 @@
                     </div>
                 </div>
             </section>
+
+            <section class="container form">
+                <div class="form__wrapper">
+                    <span class="sr-only">
+                        Sign up form, all fields are required
+                    </span>
+
+                    <form action="#">
+                        <div class="form__group">
+                            <label for="name" class="sr-only">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form__control"
+                                placeholder="Name"
+                                required
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="name" class="sr-only">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="form__control"
+                                placeholder="Email"
+                                required
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <div class="form__group sr-only" aria-hidden="false">
+                            <label for="plan">Plan</label>
+                            <select name="plan" id="plan">
+                                <option value="basic">Basic - Free</option>
+                                <option value="pro">Pro - $9.99</option>
+                                <option value="ultimate">
+                                    Ultimate - $19.99
+                                </option>
+                            </select>
+                        </div>
+
+                        <div
+                            class="form__group custom-select"
+                            aria-hidden="true"
+                        >
+                            <div class="custom-select__visible form__control">
+                                <div class="custom-select__plan">
+                                    <span class="custom-select__visible-text">
+                                        Basic Pack
+                                    </span>
+                                    <span class="custom-select__visible-price">
+                                        Free
+                                    </span>
+                                </div>
+
+                                <span class="custom-select__toggle-icon">
+                                    <img
+                                        src="assets/images/sign-up/icon-arrow-down.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </div>
+
+                            <div class="custom-select__hidden">
+                                <div
+                                    class="custom-select__option custom-select__option-selected"
+                                    data-value="basic"
+                                >
+                                    <div class="custom-select__plan">
+                                        <span
+                                            class="custom-select__option-text"
+                                        >
+                                            Basic Pack
+                                        </span>
+                                        <span
+                                            class="custom-select__option-price"
+                                        >
+                                            Free
+                                        </span>
+                                    </div>
+
+                                    <span class="custom-select__selected-icon">
+                                        <img
+                                            src="assets/images/sign-up/icon-check.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </div>
+
+                                <div
+                                    class="custom-select__option custom-select__option-selected"
+                                    data-value="pro"
+                                >
+                                    <div class="custom-select__plan">
+                                        <span
+                                            class="custom-select__option-text"
+                                        >
+                                            Pro Pack
+                                        </span>
+                                        <span
+                                            class="custom-select__option-price"
+                                        >
+                                            $9.99
+                                        </span>
+                                    </div>
+
+                                    <span class="custom-select__selected-icon">
+                                        <img
+                                            src="assets/images/sign-up/icon-check.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </div>
+
+                                <div
+                                    class="custom-select__option custom-select__option-selected"
+                                    data-value="ultimate"
+                                >
+                                    <div class="custom-select__plan">
+                                        <span
+                                            class="custom-select__option-text"
+                                        >
+                                            Ultimate Pack
+                                        </span>
+                                        <span
+                                            class="custom-select__option-price"
+                                        >
+                                            $19.99
+                                        </span>
+                                    </div>
+
+                                    <span class="custom-select__selected-icon">
+                                        <img
+                                            src="assets/images/sign-up/icon-check.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="sr-only">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                class="form__control"
+                                placeholder="Phone Number"
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="sr-only">Company</label>
+                            <input
+                                type="text"
+                                name="company"
+                                id="company"
+                                class="form__control"
+                                placeholder="Company"
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn"
+                            data-btn-style="primary"
+                        >
+                            Get on the List
+                        </button>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <script src="js/scripts.js"></script>
