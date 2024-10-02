@@ -5,6 +5,12 @@
 /* ------------------------------- */
 
 .form {
+    .btn {
+        margin: var(--form-btn-margin);
+        max-width: 100%;
+        width: 100%;
+    }
+
     /* Form Wrapper                    */
     /* ------------------------------- */
     &__wrapper {
