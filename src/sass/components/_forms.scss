@@ -43,3 +43,81 @@
         }
     }
 }
+
+/* ------------------------------- */
+/* Custom Select                   */
+/* ------------------------------- */
+
+.custom-select {
+    position: relative;
+    color: var(--custom-select-clr);
+    font-weight: var(--custom-select-fw);
+    cursor: pointer;
+
+    &__visible {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__toggle-icon img {
+        transform: rotate(0deg);
+        transition: transform 200ms ease-in-out;
+    }
+
+    &__toggle-icon.rotate img {
+        transform: rotate(180deg);
+    }
+
+    &__plan span {
+        &:nth-child(even) {
+            margin-left: var(--custom-select-plan-span-margin-left);
+            color: var(--custom-select-plan-span-clr);
+        }
+    }
+
+    &__hidden {
+        display: none;
+
+        &.active {
+            position: absolute;
+            left: 0;
+            top: 115%;
+            display: block;
+            width: 100%;
+            height: fit-content;
+            z-index: 999;
+            padding: var(--custom-select-plan-active-padding);
+            background-color: var(--custom-select-plan-active-bg);
+            border-radius: var(--custom-select-plan-radius);
+            border: var(--custom-select-plan-border);
+        }
+    }
+
+    &__option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: var(--custom-select-plan-option-padding-block);
+        border-bottom: var(--custom-select-plan-option-border-bottom);
+
+        &.selected {
+            .custom-select__selected-icon {
+                display: block;
+            }
+        }
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    &__selected-icon {
+        display: none;
+    }
+}
