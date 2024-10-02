@@ -199,6 +199,19 @@
     --form-control-placeholder-clr: hsl(var(--clr-neutral-500) / 0.5);
     --form-control-alert-clr: hsl(var(--clr-error));
 
+    // --- Custom Select
+    --custom-select-clr: hsl(var(--clr-neutral-800));
+    --custom-select-fw: var(--fw-bold);
+    --custom-select-plan-span-clr: hsl(var(--clr-neutral-500));
+    --custom-select-plan-span-margin-left: 0.5rem;
+    --custom-select-plan-active-padding: 1.5rem 2rem 1.5rem;
+    --custom-select-plan-active-bg: hsl(var(--clr-neutral-100));
+    --custom-select-plan-radius: 13px;
+    --custom-select-plan-border: 1px solid hsl(var(--clr-neutral-500) / 0.15);
+    --custom-select-plan-option-padding-block: 1rem;
+    --custom-select-plan-option-border-bottom: 1px solid
+        hsl(var(--clr-neutral-500) / 0.5);
+
     // ---------- LAYOUT
 
     // ----- Header
