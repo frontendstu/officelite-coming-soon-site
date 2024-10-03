@@ -121,3 +121,86 @@ selectOptions.forEach((option) => {
         );
     });
 });
+
+/* ------------------------------- */
+/* Form Validation                 */
+/* ------------------------------- */
+
+// Required field constants
+const formName = document.getElementById('name');
+const formEmail = document.getElementById('email');
+const form = document.getElementById('sign-up');
+
+function createError(element, message) {
+    // Check if the error element already exists
+    if (!element.parentElement.querySelector('.form__error')) {
+        const span = document.createElement('span');
+        const img = document.createElement('img');
+
+        span.classList.add('form__error');
+        img.setAttribute('src', '../assets/images/sign-up/icon-cross.svg');
+        span.textContent = ` ${message}`; // Display custom error message next to the icon
+
+        span.insertBefore(img, span.firstChild); // Insert icon before text
+        element.parentElement.appendChild(span);
+        element.parentElement.classList.add('form__alert');
+    }
+}
+
+function removeError(element) {
+    const errorElement = element.parentElement.querySelector('.form__error');
+    if (errorElement) {
+        errorElement.remove();
+        element.parentElement.classList.remove('form__alert');
+    }
+}
+
+// Validate name field (required)
+function validateName() {
+    if (formName.value === '' || formName.value === null) {
+        createError(formName, ''); // No message displayed
+        return false;
+    } else {
+        removeError(formName);
+        return true;
+    }
+}
+
+// Validate email field (required & format check)
+function validateEmail() {
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (formEmail.value === '' || formEmail.value === null) {
+        createError(formEmail, ''); // No message displayed
+        return false;
+    } else if (!formEmail.value.match(emailRegex)) {
+        createError(formEmail, 'Please enter a valid email'); // Retain this message for invalid format
+        return false;
+    } else {
+        removeError(formEmail);
+        return true;
+    }
+}
+
+// Validate the entire form on submit
+function validateForm(event) {
+    // Clear the default browser validation messages
+    formName.setCustomValidity('');
+    formEmail.setCustomValidity('');
+
+    // Perform custom validation
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+
+    // Prevent form submission if validation fails
+    if (!isNameValid || !isEmailValid) {
+        event.preventDefault();
+    }
+}
+
+// Attach form submit event listener
+form.addEventListener('submit', validateForm);
+
+// Optional: Attach blur event listeners for real-time validation
+formName.addEventListener('blur', validateName);
+formEmail.addEventListener('blur', validateEmail);
