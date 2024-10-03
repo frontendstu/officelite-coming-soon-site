@@ -48,6 +48,17 @@
             color: var(--form-control-alert-clr);
         }
     }
+
+    /* Form Alert                      */
+    /* ------------------------------- */
+    &__alert input {
+        border-bottom-color: hsl(var(--clr-error));
+        color: hsl(var(--clr-error));
+
+        &::placeholder {
+            color: hsl(var(--clr-error));
+        }
+    }
 }
 
 /* ------------------------------- */
