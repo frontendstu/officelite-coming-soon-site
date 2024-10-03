@@ -59,6 +59,13 @@
             color: hsl(var(--clr-error));
         }
     }
+
+    /* Form Error                      */
+    /* ------------------------------- */
+    &__error {
+        position: absolute;
+        transform: translate(-2.5rem, 1rem);
+    }
 }
 
 /* ------------------------------- */
