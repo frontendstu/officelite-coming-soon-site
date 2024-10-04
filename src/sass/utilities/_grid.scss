@@ -1,1 +1,17 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Grid Column 2                   */
+/* ------------------------------- */
+
+@media (min-width: 90em) {
+    .grid-col__2-xl {
+        @include mixin.grid($columns: 2);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--grid-col-2-xl-gap);
+        margin-top: var(--grid-col-2-xl-margin-top);
+    }
+}
