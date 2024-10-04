@@ -145,3 +145,13 @@
         display: none;
     }
 }
+
+/* ------------------------------- */
+/* Form @ Max Width 1439px         */
+/* ------------------------------- */
+
+@media (max-width: 89.98em) {
+    .form {
+        @include mixin.flex;
+    }
+}
