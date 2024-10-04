@@ -252,6 +252,15 @@
     --pricing-gap: 2rem 0;
     --pricing-margin-top: 6rem;
 
+    // ----- Sign Up
+    --sign-up-transform: translateY(-6.25rem);
+    --sign-up-bg: url('../assets/images/sign-up/bg-pattern-side.svg'),
+        linear-gradient(
+            to bottom,
+            hsl(var(--clr-neutral-100) / 0) 70%,
+            hsl(var(--clr-neutral-900)) 70%
+        );
+
     // ---------- MEDIA QUERIES
 
     // ----- 768px
@@ -331,5 +340,13 @@
         --footer-padding-block: 20rem 5.625rem;
         --footer-transform: translateY(-15rem);
         --footer-text-align: left;
+
+        --sign-up-transform: translateY(0);
+        --sign-up-bg: url('../assets/images/sign-up/bg-pattern-side.svg'),
+            linear-gradient(
+                to right,
+                hsl(var(--clr-neutral-100) / 0) 70%,
+                hsl(var(--clr-neutral-900)) 70%
+            );
     }
 }
