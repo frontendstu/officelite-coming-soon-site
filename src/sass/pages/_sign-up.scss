@@ -1,1 +1,19 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Sign Up                         */
+/* ------------------------------- */
+
+body.sign-up {
+    transform: var(--sign-up-transform);
+    background: var(--sign-up-bg);
+    background-position: center;
+}
+
+@media (min-width: 90em) {
+    body.sign-up {
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
